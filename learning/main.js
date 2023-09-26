@@ -6,8 +6,8 @@ const teacherage = 28
 const studentage = 19
 
 if(teacherage > studentage) {
-    console.log ("Test")
+    console.log 
 }
 else {
-    console.log ("test2")
+    console.log 
 }
