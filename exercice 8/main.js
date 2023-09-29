@@ -13,12 +13,12 @@ class pokemon {
 let Mimiqui = new pokemon ("Mimiqui", 91, 40, 150)
 let Nymphali = new pokemon ("Nymphali", 86, 45, 155)
 
-while (Mimiqui.pv >=0 || Nymphali.pv >= 0) {
+while (Mimiqui.pv >=0 && Nymphali.pv >= 0) {
     Mimiqui.attackPoke(Nymphali)
         console.log (Mimiqui.name + " a " + Mimiqui.pv + " pv restants")
 
     if (Nymphali.pv <= 0) {
-        console.log(Mimiqui.name + " a win")
+        console.log(Mimiqui.name + " a remporté le combat")
         break
     }
     
@@ -27,7 +27,7 @@ while (Mimiqui.pv >=0 || Nymphali.pv >= 0) {
     Nymphali.attackPoke(Mimiqui) 
         console.log (Nymphali.name + " a " + Nymphali.pv + " pv restants")
     if (Mimiqui.pv <= 0) {
-        console.log(Nymphali.name + " a remporté le match")
+        console.log(Nymphali.name + " a remporté le combat")
         break
     }
    
